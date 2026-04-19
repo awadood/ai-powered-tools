@@ -5,4 +5,4 @@ use App\Http\Controllers\ToolController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class)->name('home');
-Route::get('/tools/{tool}', [ToolController::class, 'show'])->name('tools.show');
+Route::get('/{tool}', [ToolController::class, 'show'])->name('tools.show');
