@@ -3,14 +3,15 @@
 return [
     'items' => [
         [
-            'slug' => 'prompt-studio',
-            'name' => 'Prompt Studio',
-            'category' => 'Creation',
-            'icon' => 'sparkles',
-            'status' => 'Sketching',
-            'accent' => '#f472b6',
-            'blurb' => 'Shape and compare prompt variants for different tones, outputs, and model behaviors.',
-            'highlight' => 'Tone presets',
+            'slug' => 'flight-disruption-notification',
+            'name' => 'Flight Disruption Notification',
+            'category' => 'Operations',
+            'icon' => 'plane-takeoff',
+            'status' => 'Live',
+            'accent' => '#38bdf8',
+            'blurb' => 'Generate polished customer notices for flight disruptions, hotel services, and car booking changes.',
+            'highlight' => 'Copy-ready notices',
+            'view' => 'tools.flight-disruption-notification',
         ],
         [
             'slug' => 'meeting-muse',

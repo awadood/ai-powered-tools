@@ -21,17 +21,27 @@ class ExampleTest extends TestCase
         $response
             ->assertOk()
             ->assertSee('AI Playground')
-            ->assertSee('Prompt Studio')
+            ->assertSee('Flight Disruption Notification')
             ->assertSee('Idea Garden');
     }
 
-    public function test_a_placeholder_tool_page_can_be_opened(): void
+    public function test_the_live_tool_page_can_be_opened(): void
     {
-        $response = $this->get('/tools/prompt-studio');
+        $response = $this->get('/tools/flight-disruption-notification');
 
         $response
             ->assertOk()
-            ->assertSee('Prompt Studio')
+            ->assertSee('Flight Disruption Notification')
+            ->assertSee('Build the notification');
+    }
+
+    public function test_a_placeholder_tool_page_can_still_be_opened(): void
+    {
+        $response = $this->get('/tools/meeting-muse');
+
+        $response
+            ->assertOk()
+            ->assertSee('Meeting Muse')
             ->assertSee('Placeholder page');
     }
 
