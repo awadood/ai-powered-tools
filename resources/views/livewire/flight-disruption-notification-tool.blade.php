@@ -88,18 +88,19 @@
                 <button
                     type="submit"
                     wire:loading.attr="disabled"
-                    class="app-button-primary min-w-[13.75rem] justify-center disabled:cursor-not-allowed disabled:opacity-60"
+                    class="app-button-primary inline-flex h-12 min-w-[15rem] items-center justify-center px-6 disabled:cursor-not-allowed disabled:opacity-60"
                 >
-                    <span wire:loading.remove wire:target="generate" class="inline-flex min-w-[10.75rem] items-center justify-center gap-2 whitespace-nowrap">
+                    <span wire:loading.remove wire:target="generate" class="inline-flex items-center gap-2 whitespace-nowrap leading-none">
                         <i data-lucide="wand" class="h-4 w-4"></i>
                         Generate notification
                     </span>
-                    <span wire:loading wire:target="generate" class="inline-flex min-w-[10.75rem] items-center justify-center gap-2 whitespace-nowrap">
-                        <svg class="h-4 w-4 animate-spin" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+
+                    <span wire:loading.inline-flex wire:target="generate" class="items-center gap-2 whitespace-nowrap leading-none">
+                        <svg class="h-4 w-4 shrink-0 animate-spin" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                             <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" class="opacity-25"></circle>
                             <path d="M22 12a10 10 0 0 0-10-10" stroke="currentColor" stroke-width="4" class="opacity-90"></path>
                         </svg>
-                        Drafting...
+                        <span>Drafting...</span>
                     </span>
                 </button>
 
@@ -236,7 +237,7 @@
             </section>
 
             <section class="app-panel p-6">
-                <p class="app-kicker text-pink-600 dark:text-pink-200">Guidance</p>
+                <p class="app-kicker app-kicker-pink">Guidance</p>
                 <div class="mt-4 grid gap-3 md:grid-cols-3 xl:grid-cols-1">
                     <article class="app-panel-muted p-4">
                         <p class="app-heading text-base">Cancellation</p>

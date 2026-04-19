@@ -9,7 +9,7 @@
             </a>
 
             <div class="flex flex-wrap items-center gap-3">
-                <span class="app-pill border-emerald-400/25 bg-emerald-400/10 text-emerald-700 dark:text-emerald-200">Live tool</span>
+                <span class="app-pill app-pill-emerald">Live tool</span>
                 <span class="app-pill">English only</span>
                 @include('partials.theme-switcher')
             </div>
@@ -18,11 +18,11 @@
         <section class="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
             <div class="app-panel-strong app-tool-hero p-8">
                 <div class="flex flex-wrap items-center gap-3">
-                    <span class="app-pill border-sky-300/25 bg-sky-300/10 text-sky-700 dark:text-sky-100">
-                        <span class="h-2 w-2 rounded-full bg-sky-400"></span>
+                    <span class="app-pill app-pill-sky">
+                        <span class="app-pill-dot"></span>
                         Customer notification generator
                     </span>
-                    <span class="app-pill border-pink-300/25 bg-pink-300/10 text-pink-700 dark:text-pink-100">
+                    <span class="app-pill app-pill-pink">
                         Operations · Travel support
                     </span>
                 </div>
@@ -55,7 +55,7 @@
 
             <aside class="space-y-6">
                 <section class="app-panel p-6">
-                    <p class="app-kicker text-pink-600 dark:text-pink-200">How it works</p>
+                    <p class="app-kicker app-kicker-pink">How it works</p>
                     <ul class="mt-4 space-y-3 text-sm leading-7">
                         <li class="app-copy flex gap-3">
                             <i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-emerald-500"></i>
@@ -73,7 +73,7 @@
                 </section>
 
                 <section class="app-panel p-6">
-                    <p class="app-kicker text-sky-600 dark:text-sky-200">Included use cases</p>
+                    <p class="app-kicker app-kicker-sky">Included use cases</p>
                     <div class="mt-4 grid gap-3">
                         <div class="app-panel-muted px-4 py-4">
                             <p class="app-heading text-base">Flight disruptions</p>

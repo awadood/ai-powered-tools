@@ -57,6 +57,18 @@
         --theme-toggle-text: #334155;
         --theme-toggle-active-bg: #0f172a;
         --theme-toggle-active-text: #f8fafc;
+        --tone-sky-bg: rgba(14, 165, 233, 0.12);
+        --tone-sky-border: rgba(14, 165, 233, 0.28);
+        --tone-sky-text: #0c4a6e;
+        --tone-pink-bg: rgba(236, 72, 153, 0.12);
+        --tone-pink-border: rgba(236, 72, 153, 0.24);
+        --tone-pink-text: #9d174d;
+        --tone-emerald-bg: rgba(16, 185, 129, 0.12);
+        --tone-emerald-border: rgba(16, 185, 129, 0.24);
+        --tone-emerald-text: #065f46;
+        --tone-cyan-text: #155e75;
+        --tone-fuchsia-text: #86198f;
+        --tone-amber-text: #92400e;
     }
 
     html.dark {
@@ -98,6 +110,18 @@
         --theme-toggle-text: #cbd5e1;
         --theme-toggle-active-bg: #f8fafc;
         --theme-toggle-active-text: #0f172a;
+        --tone-sky-bg: rgba(56, 189, 248, 0.18);
+        --tone-sky-border: rgba(125, 211, 252, 0.3);
+        --tone-sky-text: #d6f2ff;
+        --tone-pink-bg: rgba(244, 114, 182, 0.16);
+        --tone-pink-border: rgba(244, 114, 182, 0.28);
+        --tone-pink-text: #ffd6ea;
+        --tone-emerald-bg: rgba(52, 211, 153, 0.16);
+        --tone-emerald-border: rgba(110, 231, 183, 0.28);
+        --tone-emerald-text: #d1fae5;
+        --tone-cyan-text: #bae6fd;
+        --tone-fuchsia-text: #f5d0fe;
+        --tone-amber-text: #fde68a;
     }
 
     ::selection {
@@ -246,6 +270,54 @@
         border-color: var(--border-soft);
         background: var(--surface-2);
         color: var(--text-muted);
+    }
+
+    .app-pill-dot {
+        @apply h-2 w-2 rounded-full;
+        background: currentColor;
+        opacity: 0.92;
+    }
+
+    .app-pill-sky {
+        border-color: var(--tone-sky-border);
+        background: var(--tone-sky-bg);
+        color: var(--tone-sky-text);
+    }
+
+    .app-pill-pink {
+        border-color: var(--tone-pink-border);
+        background: var(--tone-pink-bg);
+        color: var(--tone-pink-text);
+    }
+
+    .app-pill-emerald {
+        border-color: var(--tone-emerald-border);
+        background: var(--tone-emerald-bg);
+        color: var(--tone-emerald-text);
+    }
+
+    .app-kicker-cyan {
+        color: var(--tone-cyan-text);
+    }
+
+    .app-kicker-fuchsia {
+        color: var(--tone-fuchsia-text);
+    }
+
+    .app-kicker-amber {
+        color: var(--tone-amber-text);
+    }
+
+    .app-kicker-emerald {
+        color: var(--tone-emerald-text);
+    }
+
+    .app-kicker-pink {
+        color: var(--tone-pink-text);
+    }
+
+    .app-kicker-sky {
+        color: var(--tone-sky-text);
     }
 
     .app-field,

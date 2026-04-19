@@ -14,7 +14,7 @@
             </a>
 
             <div class="flex flex-wrap items-center gap-3">
-                <span class="app-pill border-pink-300/30 bg-pink-400/10 text-pink-600 dark:text-pink-100">Playful gallery</span>
+                <span class="app-pill app-pill-pink">Playful gallery</span>
                 <span class="app-pill">8 tools</span>
                 @include('partials.theme-switcher')
             </div>
@@ -31,11 +31,11 @@
                 x-transition.duration.500ms
             >
                 <div class="flex flex-wrap items-center gap-3">
-                    <span class="app-pill border-pink-300/30 bg-pink-400/10 text-pink-600 dark:text-pink-100">
-                        <span class="h-2 w-2 rounded-full bg-pink-400"></span>
+                    <span class="app-pill app-pill-pink">
+                        <span class="app-pill-dot"></span>
                         Playful demo gallery
                     </span>
-                    <span class="app-pill border-emerald-400/25 bg-emerald-400/10 text-emerald-700 dark:text-emerald-200">
+                    <span class="app-pill app-pill-emerald">
                         Laravel + Livewire + Tailwind + Flowbite + Alpine + Lucide
                     </span>
                 </div>
@@ -75,25 +75,25 @@
                 x-transition.duration.700ms
             >
                 <article class="app-stat-card">
-                    <p class="app-kicker text-cyan-600 dark:text-cyan-200">Ready now</p>
+                    <p class="app-kicker app-kicker-cyan">Ready now</p>
                     <p class="app-heading mt-3 text-4xl">8</p>
                     <p class="app-copy-muted mt-2 text-sm leading-6">A gallery that can host live tools and placeholders without feeling split apart.</p>
                 </article>
 
                 <article class="app-stat-card">
-                    <p class="app-kicker text-fuchsia-600 dark:text-fuchsia-200">Design direction</p>
+                    <p class="app-kicker app-kicker-fuchsia">Design direction</p>
                     <p class="app-heading mt-3 text-3xl">Warm, clear, playful</p>
                     <p class="app-copy-muted mt-2 text-sm leading-6">Rounded surfaces, layered cards, and color accents tuned for readability first.</p>
                 </article>
 
                 <article class="app-stat-card">
-                    <p class="app-kicker text-amber-600 dark:text-amber-200">Interaction model</p>
+                    <p class="app-kicker app-kicker-amber">Interaction model</p>
                     <p class="app-heading mt-3 text-2xl">Server-driven UI</p>
                     <p class="app-copy-muted mt-2 text-sm leading-6">Laravel and Livewire keep the flow simple while Alpine handles small interactions cleanly.</p>
                 </article>
 
                 <article class="app-stat-card">
-                    <p class="app-kicker text-emerald-600 dark:text-emerald-200">Theme behavior</p>
+                    <p class="app-kicker app-kicker-emerald">Theme behavior</p>
                     <p class="app-heading mt-3 text-2xl">System by default</p>
                     <p class="app-copy-muted mt-2 text-sm leading-6">The interface follows browser preference by default, and the inline toggle can override it any time.</p>
                 </article>
@@ -112,7 +112,7 @@
                 <div class="app-modal">
                     <div class="flex items-center justify-between border-b px-6 py-5" style="border-color: var(--border-soft);">
                         <div>
-                            <p class="app-kicker text-pink-600 dark:text-pink-200">Current stack</p>
+                            <p class="app-kicker app-kicker-pink">Current stack</p>
                             <h3 class="app-heading mt-1 text-2xl">Why this setup works</h3>
                         </div>
                         <button type="button" data-modal-hide="stack-modal" class="app-button-secondary px-3 py-2">

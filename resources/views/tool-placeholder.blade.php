@@ -13,8 +13,8 @@
                     class="app-pill"
                     style="
                         border-color: color-mix(in srgb, {{ $tool['accent'] }} 28%, var(--border-soft));
-                        background: color-mix(in srgb, {{ $tool['accent'] }} 10%, var(--surface-2));
-                        color: {{ $tool['accent'] }};
+                        background: color-mix(in srgb, {{ $tool['accent'] }} 12%, var(--surface-2));
+                        color: color-mix(in srgb, {{ $tool['accent'] }} 76%, var(--text-strong) 24%);
                     "
                 >
                     {{ $tool['status'] }}
@@ -105,7 +105,7 @@
 
             <aside class="space-y-6">
                 <section class="app-panel p-6">
-                    <p class="app-kicker text-sky-600 dark:text-sky-200">What changes later</p>
+                    <p class="app-kicker app-kicker-sky">What changes later</p>
                     <ul class="mt-4 space-y-3 text-sm leading-7">
                         <li class="app-copy flex gap-3">
                             <i data-lucide="check" class="mt-1 h-4 w-4 shrink-0 text-emerald-500"></i>
@@ -123,7 +123,7 @@
                 </section>
 
                 <section class="app-panel p-6">
-                    <p class="app-kicker text-pink-600 dark:text-pink-200">More demos</p>
+                    <p class="app-kicker app-kicker-pink">More demos</p>
                     <div class="mt-4 grid gap-3">
                         @foreach ($relatedTools as $relatedTool)
                             <a href="{{ route('tools.show', $relatedTool['slug']) }}" class="app-panel-muted flex items-center justify-between px-4 py-4 text-sm transition hover:-translate-y-0.5">
@@ -149,7 +149,7 @@
                 <div class="app-modal">
                     <div class="flex items-center justify-between border-b px-6 py-5" style="border-color: var(--border-soft);">
                         <div>
-                            <p class="app-kicker text-pink-600 dark:text-pink-200">Roadmap note</p>
+                            <p class="app-kicker app-kicker-pink">Roadmap note</p>
                             <h3 class="app-heading mt-1 text-2xl">{{ $tool['name'] }} is not implemented yet</h3>
                         </div>
                         <button type="button" data-modal-hide="placeholder-modal" class="app-button-secondary px-3 py-2">

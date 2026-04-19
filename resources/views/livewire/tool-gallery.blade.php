@@ -1,7 +1,7 @@
 <section id="tool-gallery" class="py-14">
     <div class="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div class="space-y-2">
-            <p class="app-kicker text-sky-600 dark:text-sky-200">Tool gallery</p>
+            <p class="app-kicker app-kicker-sky">Tool gallery</p>
             <h2 class="app-heading text-3xl">Launch a tool from the gallery</h2>
         </div>
 
@@ -41,10 +41,10 @@
                         <div
                             class="inline-flex h-12 w-12 items-center justify-center rounded-2xl border"
                             style="
-                                border-color: color-mix(in srgb, {{ $tool['accent'] }} 30%, transparent);
-                                background: color-mix(in srgb, {{ $tool['accent'] }} 14%, var(--surface-2));
-                                color: {{ $tool['accent'] }};
-                                box-shadow: 0 12px 35px -20px {{ $tool['accent'] }};
+                                border-color: color-mix(in srgb, {{ $tool['accent'] }} 34%, var(--border-soft));
+                                background: color-mix(in srgb, {{ $tool['accent'] }} 16%, var(--surface-2));
+                                color: color-mix(in srgb, {{ $tool['accent'] }} 78%, var(--text-strong) 22%);
+                                box-shadow: 0 12px 35px -20px color-mix(in srgb, {{ $tool['accent'] }} 78%, transparent);
                             "
                         >
                             <i data-lucide="{{ $tool['icon'] }}" class="h-6 w-6"></i>
@@ -53,8 +53,9 @@
                         <span
                             class="inline-flex rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.25em]"
                             style="
-                                background-color: color-mix(in srgb, {{ $tool['accent'] }} 16%, transparent);
-                                color: {{ $tool['accent'] }};
+                                border: 1px solid color-mix(in srgb, {{ $tool['accent'] }} 28%, var(--border-soft));
+                                background-color: color-mix(in srgb, {{ $tool['accent'] }} 12%, var(--surface-2));
+                                color: color-mix(in srgb, {{ $tool['accent'] }} 76%, var(--text-strong) 24%);
                             "
                         >
                             {{ $tool['status'] }}
@@ -63,7 +64,7 @@
 
                     <div class="mt-8 space-y-3">
                         <div class="space-y-1">
-                            <p class="app-kicker" style="color: color-mix(in srgb, var(--text-soft) 84%, {{ $tool['accent'] }} 16%);">{{ $tool['category'] }}</p>
+                            <p class="app-kicker" style="color: color-mix(in srgb, var(--text-soft) 68%, {{ $tool['accent'] }} 32%);">{{ $tool['category'] }}</p>
                             <h3 class="app-heading text-2xl">{{ $tool['name'] }}</h3>
                         </div>
 
@@ -77,7 +78,7 @@
                             <p class="app-kicker">Focus</p>
                             <p class="app-heading mt-1 text-base">{{ $tool['highlight'] }}</p>
                         </div>
-                        <span class="inline-flex items-center gap-2 font-semibold" style="color: {{ $tool['accent'] }};">
+                        <span class="inline-flex items-center gap-2 font-semibold" style="color: color-mix(in srgb, {{ $tool['accent'] }} 78%, var(--text-strong) 22%);">
                             Open
                             <i data-lucide="arrow-up-right" class="h-4 w-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
                         </span>
