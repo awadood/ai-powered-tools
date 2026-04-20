@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Anthropic\Client as AnthropicClient;
 use Anthropic\RequestOptions;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -39,6 +40,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        URL::forceRootUrl(config('app.url'));
     }
 }
